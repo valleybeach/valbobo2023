@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/player.css">
+    <title>Free Movie Streaming</title>
+</head>
+<body>
+    <header>
+        <h1>STREAMFLIX</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html#home">Home</a></li>
+                <li><a href="main.html#action">Action</a></li>
+                <li><a href="main.html#drama">Drama</a></li>
+                <li><a href="main.html#anime">Anime</a></li>
+                <!-- Add more categories as needed -->
+            </ul>
+        </nav>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Search for Movies">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    
+    <section id="player" class="category">
+        <h2>Movie Player</h2>
+        <div class="movie-details">
+            <!-- Movie details... -->
+        </div>
+        <div class="movie-player">
+            <!-- Use JavaScript to extract the video query parameter and dynamically embed the video -->
+            <script>
+                const urlParams = new URLSearchParams(window.location.search);
+                const videoParam = urlParams.get("video");
+                const videoElement = document.createElement("iframe");
+                videoElement.width = "640";
+                videoElement.height = "360";
+                videoElement.src = `https://www.youtube.com/embed/${videoParam}`;
+                videoElement.frameBorder = "0";
+                videoElement.allowfullscreen = true;
+                document.querySelector(".movie-player").appendChild(videoElement);
+            </script>
+        </div>
+    </section>
+    
+    <!-- Other sections and scripts... -->
+    <script>
+        // Prevent form submission from refreshing the page
+        const searchForm = document.getElementById("search-form");
+        searchForm.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+            // Add your search logic here
+        });
+    </script>
+</body>
+</html>

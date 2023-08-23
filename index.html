@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Free Movie Streaming</title>
+</head>
+<body>
+    <header>
+        <h1>STREAMFLIX</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#action">Action</a></li>
+                <li><a href="#drama">Drama</a></li>
+                <li><a href="#anime">Anime</a></li>
+                <!-- Add more categories as needed -->
+            </ul>
+        </nav>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Search for Movies">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    
+        <div id="selected-movie">
+        <!-- Movie details will be displayed here -->
+    </div>
+    
+    <section id="home" class="category">
+        <h2>HOME</h2>
+        <div class="scrollable-container">
+            <a href="player.html?video=https://www.youtube.com/watch?v=UUkn-enk2RU&ab_channel=MarvelEntertainment"><img src="images/antman.jpg" alt="Antman 2"></a>
+            <a href="player.html?video=https://www.youtube.com/watch?v=vS3_72Gb-bI&ab_channel=DC"><img src="images/blue beetle.jpg" alt="Blue Beetle"></a>
+            <a href="player.html?video=https://www.youtube.com/watch?v=rrGMENN1iaY&ab_channel=MovieBox"><img src="images/endgame.jpg" alt="Avengers Endgame"></a>
+            <a href="player.html?video=https://www.youtube.com/watch?v=XuDwndGaCFo&ab_channel=Netflix"><img src="images/heart of stone.jpg" alt="Heart of Stone"></a>
+            <a href="player.html?video=https://www.youtube.com/watch?v=ZuQuOnYnr3Q&ab_channel=SonyPicturesEntertainment"><img src="images/insidious.jpg" alt="Insidous The Red Door"></a>
+            <a href="player.html?video=https://www.youtube.com/watch?v=pBk4NYhWNMM&ab_channel=WarnerBros.Pictures"><img src="images/Barbie_2023_poster.jpg" alt="Barbie 2023"></a>
+            <a href="#" data-movie-name="Val"><img src="images/Val.jpg" alt="Val"></a>
+            <!-- Add more movie images -->
+        </div>
+    </section>
+    
+    <section 
+        <a href="#home" class="see-all">See All</a>
+    </section>
+        
+    <section id="action" class="category">
+        <h2>Action</h2>
+        <!-- Movie posters and details go here -->
+    </section>
+
+    <section id="drama" class="category">
+        <h2>Drama</h2>
+        <!-- Movie posters and details go here -->
+    </section>
+    
+    <!-- Add more sections for other categories -->
+    <script src="js/search.js"></script>
+</body>
+</html>
