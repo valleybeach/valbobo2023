@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/pexels-philippe-donn-1169754.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* White color for navigation links */
+}
+
+.category {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Add the new CSS code snippet below the existing styles */
+.category a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.category img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.category h2 {
+    font-size: 1.2em;
+    margin: 0;
+}
+.category img {
+    max-width: 20%; /* Adjust the value to make the image smaller */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Add the responsive design media query below the existing styles */
+@media (max-width: 768px) {
+    .category img {
+        max-width: 40%; /* Adjust the value for smaller screens */
+    }
+}
+ .category {
+            overflow-x: scroll; /* Enable horizontal scrolling */
+            white-space: nowrap;
+        }
+
+        .category a {
+            display: inline-block;
+            text-decoration: none;
+            color: #333;
+            margin-right: 15px;
+            max-width: 200px; /* Adjust as needed */
+        }
+
+        .category img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .category h2 {
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        .see-all {
+            display: block;
+            margin-top: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+#search-form {
+    margin-top: 10px;
+}
+
+#search-input {
+    padding: 5px;
+}
+
+#search-form button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
